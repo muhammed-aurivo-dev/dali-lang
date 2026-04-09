@@ -2,8 +2,8 @@
   "name": "dali-language",
   "displayName": "DALI Language",
   "description": "Syntax highlighting for .dali and .dl audio DSL files.",
-  "version": "0.1.8",
-  "publisher": "aurivo-dev",
+  "version": "0.1.9",
+  "publisher": "aurivo",
   "repository": {
     "type": "git",
     "url": "https://github.com/aurivo-dev/dali-lang-repo.git"
