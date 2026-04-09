@@ -2,8 +2,12 @@
   "name": "dali-language",
   "displayName": "DALI Language",
   "description": "Syntax highlighting for .dali and .dl audio DSL files.",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "publisher": "aurivo-dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aurivo-dev/dali-lang-repo.git"
+  },
   "license": "MIT",
   "main": "./extension.js",
   "activationEvents": [
@@ -27,7 +31,12 @@
           ".dali",
           ".dl"
         ],
-        "configuration": "./language-configuration.json"
+        "filenames": [],
+        "firstLine": "^\\s*preset\\s+",
+        "icon": {
+          "light": "./media/dali-icon-letter-light.svg",
+          "dark": "./media/dali-icon-letter-dark.svg"
+        }
       }
     ],
     "grammars": [
@@ -42,7 +51,24 @@
         "language": "dali",
         "path": "./snippets/dali.code-snippets"
       }
+    ],
+    "iconThemes": [
+      {
+        "id": "dali-icons",
+        "label": "Dali DSP Icons",
+        "path": "./media/dali-file-icons.json"
+      }
+    ],
+    "themes": [
+      {
+        "label": "Dali DSP Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dali-color-theme.json"
+      }
     ]
   },
-  "icon": "media/dali-icon.png"
+  "icon": "media/dali-icon.png",
+  "devDependencies": {
+    "@vscode/vsce": "^3.7.1"
+  }
 }

@@ -50,7 +50,7 @@
     "comments": {
       "patterns": [
         {
-          "name": "comment.line.double-slash.dali",
+          "name": "comment.line.double-slash",
           "match": "//.*$"
         }
       ]
@@ -58,12 +58,12 @@
     "strings": {
       "patterns": [
         {
-          "name": "string.quoted.double.dali",
+          "name": "string.quoted.double",
           "begin": "\"",
           "end": "\"",
           "patterns": [
             {
-              "name": "constant.character.escape.dali",
+              "name": "constant.character.escape",
               "match": "\\\\."
             }
           ]
@@ -73,7 +73,7 @@
     "keywords": {
       "patterns": [
         {
-          "name": "keyword.control.dali",
+          "name": "keyword.control",
           "match": "\\b(preset|engine|chain|quality|input|output|safety|profile|strict|realtime|on|off)\\b"
         }
       ]
@@ -81,7 +81,7 @@
     "effects": {
       "patterns": [
         {
-          "name": "support.function.effect.dali",
+          "name": "support.function",
           "match": "\\b(preamp|eq32|band|peaking|limiter|compressor|low_shelf|high_shelf|reverb|bassboost|deesser|exciter|stereowidener|echo|noisegate|autogain|truepeak|dynamiceq|crossfeed|surround|bassmono|tapesat|bitdither|module)\\b"
         }
       ]
@@ -89,7 +89,7 @@
     "sectionNames": {
       "patterns": [
         {
-          "name": "entity.name.section.dali",
+          "name": "entity.name.section",
           "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b(?=\\s*\\{)"
         }
       ]
@@ -97,7 +97,7 @@
     "targets": {
       "patterns": [
         {
-          "name": "support.type.target.dali",
+          "name": "support.type",
           "match": "\\b(web|speakers|music)\\b"
         }
       ]
@@ -105,7 +105,7 @@
     "paramNames": {
       "patterns": [
         {
-          "name": "variable.parameter.key.dali",
+          "name": "variable.parameter",
           "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b(?=\\s*[:=])"
         }
       ]
@@ -135,7 +135,7 @@
     "propertyKey": {
       "patterns": [
         {
-          "name": "variable.other.property.dali",
+          "name": "variable.other.property",
           "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b(?=\\s*:)"
         }
       ]
@@ -143,7 +143,7 @@
     "assignmentIdentifier": {
       "patterns": [
         {
-          "name": "variable.parameter.assignment.dali",
+          "name": "variable.parameter",
           "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b(?=\\s*=)"
         }
       ]
@@ -151,14 +151,14 @@
     "numbersWithUnits": {
       "patterns": [
         {
-          "name": "meta.number-with-unit.dali",
+          "name": "constant.numeric",
           "match": "\\b(-?(?:\\d+\\.\\d+|\\d+))(hz|ms|db|x|%)\\b",
           "captures": {
             "1": {
-              "name": "constant.numeric.dali"
+              "name": "constant.numeric"
             },
             "2": {
-              "name": "keyword.other.unit.dali"
+              "name": "keyword.other.unit"
             }
           }
         }
@@ -167,7 +167,7 @@
     "numbers": {
       "patterns": [
         {
-          "name": "constant.numeric.dali",
+          "name": "constant.numeric",
           "match": "\\b-?(?:\\d+\\.\\d+|\\d+)\\b"
         }
       ]
